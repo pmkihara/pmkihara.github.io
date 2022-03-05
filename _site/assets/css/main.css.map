@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss",
+		"_sass/config.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"config\";\n@import \"main\";\n",
+		"// Fonts\n@import url('https://fonts.googleapis.com/css2?family=Forum&family=Maitree:wght@400;600;700&family=Urbanist:wght@400;700;900&display=swap');\n$headers-font: 'Maitree', serif;\n$body-font: 'Urbanist', sans-serif;\n$title-font: 'Forum', cursive;\n\n// Screen width sizes for responsivity\n$extra-small: 36em; // 576px\n$small: 48em;       // 768px\n$medium: 62em;      // 992px\n$large: 75em;       // 1200px\n$extra-large: 90em; // 1440px\n\n// Colors\n$black: #292929;\n$white: #FFFFFF;\n$rosy-pink: #CD8E8E;\n$medium-pink: #E3BFBF;\n$light-pink: #F2E3DE;\n",
+		"body {\n  background: $light-pink;\n  color: $black;\n  font-family: $body-font;\n}\n\nh1 {\n  font-family: $title-font;\n}\n\nh2, h3, h4, h5, h6 {\n  font-family: $headers-font;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACCA,OAAO,CAAC,mIAAI;ACDZ,AAAA,IAAI,CAAC,EACH,UAAU,EDiBC,OAAO,EChBlB,KAAK,EDYC,OAAO,ECXb,WAAW,EDAD,UAAU,EAAE,UAAU,GCCjC;;AAED,AAAA,EAAE,CAAC,EACD,WAAW,EDHA,OAAO,EAAE,OAAO,GCI5B;;AAED,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EACjB,WAAW,EDTE,SAAS,EAAE,KAAK,GCU9B"
+}
