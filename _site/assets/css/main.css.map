@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss",
+		"_sass/config.scss",
+		"_sass/components/container.scss",
+		"_sass/components/tab.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"config\";\n@import \"components/container\";\n@import \"components/tab\";\n@import \"main\";\n",
+		"// Fonts\n@import url(\"https://use.fontawesome.com/releases/v5.15.3/css/all.css\");\n@import url('https://fonts.googleapis.com/css2?family=Forum&family=Maitree:wght@400;600;700&family=Urbanist:wght@400;700;900&display=swap');\n$headers-font: 'Maitree', serif;\n$body-font: 'Urbanist', sans-serif;\n$title-font: 'Forum', cursive;\n\n// Screen width sizes for responsivity\n$extra-small: 36em; // 576px\n$small: 48em;       // 768px\n$medium: 62em;      // 992px\n$large: 75em;       // 1200px\n$extra-large: 90em; // 1440px\n\n// Colors\n$black: #292929;\n$white: #FFFFFF;\n$rosy-pink: #CD8E8E;\n$medium-pink: #E3BFBF;\n$medium-pink-text: #BB5A5A;\n$light-pink: #F2E3DE;\n",
+		"// -------------------------------- CONTAINERS ---------------------------------\n// Background container\n.main-container {\n  align-items: center;\n  display: flex;\n  justify-content: center;\n  height: 100vh;\n  width: 100%;\n}\n// Full container\n.container {\n  background-color: $white;\n  display: flex;\n  max-width: $medium;\n  width: 100%;\n  height: 100%;\n}\n// Sets container for bigger screens\n@media (min-width: $small) {\n  .container {\n    height: 80%;\n  }\n}\n.content {\n  flex-grow: 1;\n  opacity: 0;\n  width: 0;\n  transition: all .5s ease;\n}\n.content.active {\n  opacity: 1;\n  padding: 2rem;\n  width: 100%;\n}\n#content-hello {\n  background-repeat: no-repeat;\n  background-position: right;\n  background-size: contain;\n}\n",
+		"// ----------------------------------- TABS ------------------------------------\n.tab {\n  align-items: center;\n  background-color: $medium-pink;\n  color: $medium-pink-text;\n  text-transform: uppercase;\n  display: flex;\n  justify-content: space-between;\n  font-weight: 700;\n  cursor: pointer;\n  z-index: 1;\n  p {\n    margin: 0;\n  }\n}\n.tab.active {\n  background-color: $rosy-pink;\n  color: $white;\n}\n\n// Sets tabs for bigger screens\n@media (min-width: $medium) {\n  .tab {\n    writing-mode: vertical-lr;\n    padding: 1rem 0.5rem;\n  }\n}\n",
+		"body {\n  background: $light-pink;\n  color: $black;\n  font-family: $body-font;\n  margin: 0;\n}\n\nh1 {\n  font-family: $title-font;\n}\n\nh2, h3, h4, h5, h6 {\n  font-family: $headers-font;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACCA,OAAO,CAAC,+DAAI;AACZ,OAAO,CAAC,mIAAI;ACAZ,AAAA,eAAe,CAAC,EACd,WAAW,EAAE,MAAM,EACnB,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,MAAM,EACvB,MAAM,EAAE,KAAK,EACb,KAAK,EAAE,IAAI,GACZ;;AAED,AAAA,UAAU,CAAC,EACT,gBAAgB,EDKV,OAAO,ECJb,OAAO,EAAE,IAAI,EACb,SAAS,EDHF,IAAI,ECIX,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,IAAI,GACb;;AAED,MAAM,kBACJ,GAAA,AAAA,UAAU,CAAC,EACT,MAAM,EAAE,GAAG,GACZ,EAAA;;AAEH,AAAA,QAAQ,CAAC,EACP,SAAS,EAAE,CAAC,EACZ,OAAO,EAAE,CAAC,EACV,KAAK,EAAE,CAAC,EACR,UAAU,EAAE,YAAY,GACzB;;AACD,AAAA,QAAQ,AAAA,OAAO,CAAC,EACd,OAAO,EAAE,CAAC,EACV,OAAO,EAAE,IAAI,EACb,KAAK,EAAE,IAAI,GACZ;;AACD,AAAA,cAAc,CAAC,EACb,iBAAiB,EAAE,SAAS,EAC5B,mBAAmB,EAAE,KAAK,EAC1B,eAAe,EAAE,OAAO,GACzB;;ACrCD,AAAA,IAAI,CAAC,EACH,WAAW,EAAE,MAAM,EACnB,gBAAgB,EFeJ,OAAO,EEdnB,KAAK,EFeY,OAAO,EEdxB,cAAc,EAAE,SAAS,EACzB,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,aAAa,EAC9B,WAAW,EAAE,GAAG,EAChB,MAAM,EAAE,OAAO,EACf,OAAO,EAAE,CAAC,GAIX;;AAbD,AAUE,IAVE,CAUF,CAAC,CAAC,EACA,MAAM,EAAE,CAAC,GACV;;AAEH,AAAA,IAAI,AAAA,OAAO,CAAC,EACV,gBAAgB,EFCN,OAAO,EEAjB,KAAK,EFDC,OAAO,GEEd;;AAGD,MAAM,kBACJ,GAAA,AAAA,IAAI,CAAC,EACH,YAAY,EAAE,WAAW,EACzB,OAAO,EAAE,WAAW,GACrB,EAAA;;ACzBH,AAAA,IAAI,CAAC,EACH,UAAU,EHmBC,OAAO,EGlBlB,KAAK,EHaC,OAAO,EGZb,WAAW,EHCD,UAAU,EAAE,UAAU,EGAhC,MAAM,EAAE,CAAC,GACV;;AAED,AAAA,EAAE,CAAC,EACD,WAAW,EHHA,OAAO,EAAE,OAAO,GGI5B;;AAED,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EACjB,WAAW,EHTE,SAAS,EAAE,KAAK,GGU9B"
+}

@@ -1,6 +1,3 @@
----
----
-
 const tabs = document.querySelectorAll('.tab')
 
 const changeTab = (event) => {
