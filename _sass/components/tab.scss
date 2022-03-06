@@ -1,0 +1,27 @@
+// ----------------------------------- TABS ------------------------------------
+.tab {
+  align-items: center;
+  background-color: $medium-pink;
+  color: $medium-pink-text;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 1;
+  p {
+    margin: 0;
+  }
+}
+.tab.active {
+  background-color: $rosy-pink;
+  color: $white;
+}
+
+// Sets tabs for bigger screens
+@media (min-width: $medium) {
+  .tab {
+    writing-mode: vertical-lr;
+    padding: 1rem 0.5rem;
+  }
+}

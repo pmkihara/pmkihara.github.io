@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Patricia Mey Kihara"
+---
+
+<div class="main-container" style="background-image: url({{ "/assets/images/background-sm.png" | relative_url }})">
+  <div class="container">
+    <div class="tab active" id="tab-hello">
+      <p>Hello!</p>
+      <i class="fas fa-arrow-circle-up"></i>
+    </div>
+    {% include hello_content.html %}
+    <div class="tab" id="tab-about">
+      <p>About me</p>
+      <i class="fas fa-plus-circle"></i>
+    </div>
+    {% include about_content.html %}
+    <div class="tab" id="tab-projects">
+      <p>Projects</p>
+      <i class="fas fa-plus-circle"></i>
+    </div>
+    {% include projects_content.html %}
+    <div class="tab" id="tab-contact">
+      <p>Contact me</p>
+      <i class="fas fa-plus-circle"></i>
+    </div>
+    {% include contact_content.html %}
+  </div>
+</div>
