@@ -4,11 +4,27 @@ body {
   font-family: $body-font;
   margin: 0;
 }
-
-h1 {
-  font-family: $title-font;
-}
-
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: $headers-font;
+  margin: 0;
+}
+// Subtitles above the titles
+small.sub-header {
+  font-weight: 900;
+  color: $rosy-pink;
+  text-transform: uppercase;
+  margin: 0;
+}
+// Divider line under titles
+div.divider-line {
+  height: 3px;
+  width: 56px;
+  background-color: $rosy-pink;
+}
+// Strong tag will look like a lower highlighter
+strong {
+  background: linear-gradient(120deg, rgba($color: $medium-pink, $alpha: 0.7) 0%, rgba($color: $medium-pink, $alpha: 0.7) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 90%;
 }

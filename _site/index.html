@@ -14,9 +14,11 @@
       <i class="fas fa-arrow-circle-up"></i>
     </div>
     <div class="content active" id="content-hello" style="background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.4)),url(/assets/images/flower.png)">
-  <h1>Hello!</h1>
-  <h2>I'm Patricia</h2>
-  <p>Full-Stack Web Developer</p>
+  <div>
+    <p>Hello! I am</p>
+    <h1>Patricia Kihara</h1>
+    <p>Full-Stack Web Developer</p>
+  </div>
 </div>
 
     <div class="tab" id="tab-about">
@@ -24,7 +26,18 @@
       <i class="fas fa-plus-circle"></i>
     </div>
     <div class="content" id="content-about">
-  <h1>About</h1>
+  <div class="container-flex">
+    <img src="/assets/images/profile.jpg" alt="Profile picture">
+    <div>
+      <small class="sub-header">Discover</small>
+      <h1>About Me</h1>
+      <div class="divider-line"></div>
+      <p>My name is Patricia Mey Kihara. I am a Full-Stack Web Developer based in São Paulo, Brazil.</p>
+      <p>My career path is a bit out-of-ordinary: after graduating from Law School, I felt frustrated by the lack of creative thinking. This is why I got into the  Fashion industry, where I worked for 6 years as an Apparel and Accessories Designer. However, disheartened by the lack of a career path and intellectual stimulus, I decided it was time to challenge myself with something new.</p>
+      <p>As a person passionate about solving problems, learning and creating, I finally found something I love doing: programming. Thanks to my previous experiences, I have developed an analytical yet creative mindset that is team-oriented and attentive to detail.</p>
+      <p>I believe strong foundations with visually pleasant user experiences are the key to developing successful products and a better world.</p>
+    </div>
+  </div>
 </div>
 
     <div class="tab" id="tab-projects">
@@ -32,7 +45,45 @@
       <i class="fas fa-plus-circle"></i>
     </div>
     <div class="content" id="content-projects">
+  <small class="sub-header">Portfolio</small>
   <h1>Projects</h1>
+  <div class="divider-line"></div>
+  <div class="project-cards">
+    <div class="card-project">
+  <img src="/assets/images/projects/project-adventures.png" alt="Ruby's Adventures in Codeland">
+  <div class="card-content">
+    <h4>Ruby's Adventures in Codeland</h4>
+    <p>An online game to teach children basic Ruby commands. The game engine is in <strong>JavaScript ES6</strong> with
+    the back-end in <strong>Ruby on Rails.</strong></p>
+    <p>Project developed by 4 people during Le Wagon bootcamp.</p>
+    <a href="https://github.com/pmkihara/adventures_in_codeland" class="btn-capsule-gradient-pink">GitHub</a>
+    <a href="https://adventures-in-codeland.herokuapp.com/" class="btn-capsule-gradient-pink">Live</a>
+  </div>
+</div>
+
+    <div class="card-project">
+  <img src="/assets/images/projects/project-translapp.png" alt="Translapp">
+  <div class="card-content">
+    <h4>Translapp</h4>
+    <p>A marketplace application developed in <strong>Ruby on Rails</strong> to connect people in need of translation services with translators.</p>
+    <p>Project developed by 4 people during Le Wagon bootcamp.</p>
+    <a href="https://github.com/pmkihara/translapp" class="btn-capsule-gradient-pink">GitHub</a>
+    <a href="https://translapp.herokuapp.com/" class="btn-capsule-gradient-pink">Live</a>
+  </div>
+</div>
+
+    <div class="card-project">
+  <img src="/assets/images/projects/project-watchlist.png" alt="Pop-a-Corn Watchlist">
+  <div class="card-content">
+    <h4>Pop-a-Corn Watchlist</h4>
+    <p>Application to create movie watch lists with the user's comments. Developed in <strong>Ruby on Rails</strong> with movie details provided by an API.
+    <p>Project developed during Le Wagon bootcamp.</p>
+    <a href="https://github.com/pmkihara/rails-watch-list" class="btn-capsule-gradient-pink">GitHub</a>
+    <a href="https://pop-a-corn.herokuapp.com/" class="btn-capsule-gradient-pink">Live</a>
+  </div>
+</div>
+
+  </div>
 </div>
 
     <div class="tab" id="tab-contact">
@@ -40,12 +91,41 @@
       <i class="fas fa-plus-circle"></i>
     </div>
     <div class="content" id="content-contact">
-  <h1>Contact</h1>
+  <div>
+    <small class="sub-header">Get in touch</small>
+    <h1>Contact Me</h1>
+    <div class="divider-line"></div>
+    <p class="contact-icons">
+      <a href="https://www.linkedin.com/in/patricia-kihara-5828a2213/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/pmkihara" target="_blank"><i class="fab fa-github"></i></a>
+    </p>
+    <div>
+      <form action="https://formspree.io/f/xayvjljk" method="POST">
+        <div class="input-container">
+          <input type="fullname" name="fullname" placeholder=" ">
+          <label>Full name</label>
+        </div>
+        <div class="input-container">
+          <input type="email" name="email" placeholder=" ">
+          <label>Email</label>
+        </div>
+        <div class="input-container">
+          <input type="subject" name="subject" placeholder=" ">
+          <label>Subject</label>
+        </div>
+        <div class="input-container">
+          <textarea name="message" placeholder=" "></textarea>
+          <label>Message</label>
+        </div>
+        <button type="submit" class="btn-capsule-gradient-pink">Send</button>
+      </form>
+    </div>
+  </div>
 </div>
 
   </div>
 </div>
 
-  <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

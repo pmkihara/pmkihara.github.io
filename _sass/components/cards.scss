@@ -1,0 +1,29 @@
+// Cards container
+.project-cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  margin: 1rem 0;
+  max-width: 100%;
+}
+
+// Cards container in larger screens with 2 cards in the same row
+@media (min-width: $small) {
+  .project-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Project card
+.card-project {
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba($color: $rosy-pink, $alpha: 0.3);
+  width: 100%;
+  img {
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+  }
+  .card-content {
+    padding: 1rem;
+  }
+}

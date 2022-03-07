@@ -1,8 +1,3 @@
----
----
-
-const tabs = document.querySelectorAll('.tab')
-
 const changeTab = (event) => {
   const targetTab = event.currentTarget;
   const targetId = targetTab.id.replace(/tab-/, '');
@@ -27,6 +22,7 @@ const changeTab = (event) => {
   targetTab.querySelector('i').classList.add('fa-arrow-circle-up');
 }
 
+const tabs = document.querySelectorAll('.tab')
 tabs.forEach((tab) => {
   tab.addEventListener('click', changeTab);
 })

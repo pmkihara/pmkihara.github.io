@@ -1,0 +1,13 @@
+.contact-icons a {
+  color: $rosy-pink;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  &:hover {
+    color: $medium-pink;
+  }
+}
+#content-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,20 @@
+#content-hello {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  div {
+    padding: 3rem;
+  }
+  h1 {
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 2rem;
+    margin: 0;
+  }
+}

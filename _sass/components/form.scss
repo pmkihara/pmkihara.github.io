@@ -1,0 +1,44 @@
+form {
+  background-color: $light-pink;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 22rem;
+  box-shadow: 0 0 15px rgba($color: $rosy-pink, $alpha: 0.3);
+}
+.input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+label {
+  display: block;
+  color: $rosy-pink;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: all .2s;
+  top: 0.5rem;
+  font-size: 0.8rem;
+  left: 0.5rem;
+}
+input, select, textarea {
+  background: $white;
+  border-radius: 4px;
+  border: 0;
+  height: 100%;
+  outline: 0;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  font-family: $body-font;
+  &:focus ~ label, &:not(:placeholder-shown) ~label {
+    transform: translateY(-1.5rem) translateX(-0.5rem) scale(0.85);
+  }
+}
+button {
+	border: none;
+	cursor: pointer;
+  width: 100%;
+}
