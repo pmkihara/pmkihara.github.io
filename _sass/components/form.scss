@@ -3,7 +3,6 @@ form {
   border-radius: 4px;
   box-sizing: border-box;
   padding: 2rem;
-  width: 22rem;
   box-shadow: 0 0 15px rgba($color: $rosy-pink, $alpha: 0.3);
 }
 .input-container {
@@ -41,4 +40,11 @@ button {
 	border: none;
 	cursor: pointer;
   width: 100%;
+}
+
+
+@media (min-width: $medium) {
+  form {
+    width: 22rem;
+  }
 }

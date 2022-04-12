@@ -3,11 +3,12 @@
   align-items: center;
   background-color: $medium-pink;
   color: $medium-pink-text;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
   cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
   z-index: 1;
   p {
     margin: 0;

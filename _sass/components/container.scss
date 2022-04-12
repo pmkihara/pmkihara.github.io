@@ -11,33 +11,43 @@
 .container {
   background-color: $light-pink;
   display: flex;
-  max-width: $medium;
-  width: 100%;
+  flex-direction: column;
   height: 100%;
-}
-// Sets container for bigger screens
-@media (min-width: $small) {
-  .container {
-    height: 80%;
-    overflow: hidden;
-  }
+  overflow-x: hidden;
+  width: 100%;
 }
 .content {
-  flex-grow: 1;
-  width: 0%;
+  display: block;
+  flex-grow: 0;
+  height: 0%;
   opacity: 0;
   overflow-y: auto;
-  transition: width .5s ease, opacity .0s ease .5s;
+  padding: 0;
+  transition: all .5s ease, opacity .0s ease .5s, display .0s ease .5s;
+  width: 100%;
   z-index: -1;
 }
 .content.active {
+  flex-grow: 1;
   background-color: $white;
-  padding: 2rem;
-  width: 100%;
   opacity: 1;
+  width: 100%;
   z-index: 0;
 }
-.container-flex {
-  display: flex;
-  padding: 3rem;
+
+// Sets container for bigger screens
+@media (min-width: $medium) {
+  .container {
+    flex-direction: row;
+    height: 80%;
+    max-width: $medium;
+    overflow: hidden;
+  }
+  .content {
+    width: 0%;
+    height: initial;
+  }
+  .content.active {
+    padding: 2rem;
+  }
 }

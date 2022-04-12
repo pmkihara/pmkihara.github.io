@@ -7,7 +7,10 @@
   }
 }
 #content-contact {
-  padding: 3rem 0;
   display: flex;
   justify-content: center;
+  & > div {
+    height: fit-content;
+    padding: 2rem;
+  }
 }
